@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<!-- Base Definition -->
+	<definition name="base" template="/WEB-INF/templates/default.jsp">
+		<put-attribute name="title" value="fsf" />
+		<put-attribute name="head" value="/WEB-INF/tiles/head.jsp" />
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+	</definition>
+
+	<!-- Home Page -->
+	<definition name="home" extends="base">
+		<put-attribute name="title" value="Welcome to offers app" cascade="true" />
+		<put-attribute name="content" value="/WEB-INF/jsps/home.jsp" />
+	</definition>
+
+	<!-- Login Page -->
+	<definition name="login" extends="base">
+		<put-attribute name="title" value="Please Login" cascade="true" />
+		<put-attribute name="content" value="/WEB-INF/jsps/login.jsp" />
+	</definition>
+
+	<!-- Admin Page -->
+	<definition name="admin" extends="base">
+		<put-attribute name="title" value="Admin Page" cascade="true" />
+		<put-attribute name="content" value="/WEB-INF/jsps/admin.jsp" />
+	</definition>
+
+	<!-- Account Creation Confirm Page -->
+	<definition name="accountcreated" extends="base">
+		<put-attribute name="title" value="Account Created" cascade="true" />
+		<put-attribute name="content" value="/WEB-INF/jsps/accountcreated.jsp" />
+	</definition>
+
+	<!-- Create Offer Form Page -->
+	<definition name="offerform" extends="base">
+		<put-attribute name="title" value="Create Offer" cascade="true" />
+		<put-attribute name="content" value="/WEB-INF/jsps/offerform.jsp" />
+	</definition>
+	
+		<!-- New Account Page -->
+	<definition name="newaccount" extends="base">
+		<put-attribute name="title" value="Create User Account" cascade="true" />
+		<put-attribute name="content" value="/WEB-INF/jsps/newaccount.jsp" />
+	</definition>
+	
+	<!-- Offer Created -->
+	<definition name="offercreated" extends="base">
+		<put-attribute name="title" value="Offer Created" cascade="true" />
+		<put-attribute name="content" value="/WEB-INF/jsps/offercreated.jsp" />
+	</definition>
+	
+	<!-- My Offers -->
+	<definition name="myoffers" extends="base">
+		<put-attribute name="title" value="My offers" cascade="true" />
+		<put-attribute name="content" value="/WEB-INF/jsps/myoffers.jsp" />
+	</definition>
+
+</tiles-definitions>
